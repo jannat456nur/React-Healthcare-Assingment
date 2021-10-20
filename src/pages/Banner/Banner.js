@@ -13,7 +13,7 @@ const Banner = () => {
                 <div className="card-body">
                     <h5 className="card-title">Schedule Your Appointment Now</h5>
                     <p className="card-text">Popular Medical Centre And Hospital Sylhet, Sylhet</p>
-                    <Link href="#" className="btn btn-primary">Open</Link>
+
                 </div>
 
             </div>

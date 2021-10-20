@@ -11,21 +11,6 @@ const Signup = () => {
         handleEmailChange,
         handlePassChange, setError, login, error } = useFirebase()
 
-    // const [email, setEmail] = useState('')
-    // const [pass, setPass] = useState();
-
-    // const auth = getAuth();
-    // const handleEmailChange = (e) => {
-    //     setEmail(e.target.value)
-    // }
-    // const handlePassChange = (e) => {
-    //     setPass(e.target.value)
-    // }
-
-    // const handleRegistration = e => {
-    //     console.log(email, pass)
-    //     e.preventDefault();
-    // }
 
     return (
         // <div className="d-flex dakters-bg-danger" id="signup">
@@ -60,13 +45,13 @@ const Signup = () => {
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                        <input onBlur={handleEmailChange} type="email" class="form-control" id="inputEmail3" />
+                        <input onBlur={handleEmailChange} type="email" class="form-control w-75" id="inputEmail3" />
                     </div>
                 </div>
                 <div class="row mb-3">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-10">
-                        <input onBlur={handlePassChange} type="password" class="form-control" id="inputPassword3" />
+                        <input onBlur={handlePassChange} type="password" class="form-control w-75" id="inputPassword3" />
                     </div>
                 </div>
 

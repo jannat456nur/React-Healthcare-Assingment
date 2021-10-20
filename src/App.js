@@ -15,6 +15,7 @@ import Ambulance from './pages/Ambulance/Ambulance';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NotFound from './pages/Notfound/NotFound';
 import Detail from './pages/Detail/Detail';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -46,9 +47,9 @@ function App() {
           <Route path="/blood">
             <Blood></Blood>
           </Route>
-          <Route path="/pharmacy">
+          <PrivateRoute path="/pharmacy">
             <Pharmacy></Pharmacy>
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Signup></Signup>
           </Route>
