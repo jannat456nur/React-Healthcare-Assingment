@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Prof. Dr. Parveen Aktar",
+        "p": " Popular Medical Centre and Hospital Sylhet, Room No - 325 (Level - 3), Subhanighat, Sylhet, 3100",
+        "phn": "Serial: +8801841461631",
+        "degree": "MBBS, FCPS (Medicine)",
+        "p2": "Specialist in Medicine",
+        "p3": "BMDC Registration No: A-27500",
+        "price": "$20",
+        "id": 1,
+        "img": "https://media.istockphoto.com/photos/team-of-doctors-and-nurses-in-hospital-picture-id1307543618?b=1&k=20&m=1307543618&s=170667a&w=0&h=hXpYmNYXnhdD36C-8taPQvdpM9Oj-woEdge8nvPrsZY="
+    },
+    {
+        "name": "Prof. Dr. Cyrus Shakiba",
+        "p": " Popular Medical Centre and Hospital Sylhet, Room No - 325 (Level - 3), Subhanighat, Sylhet, 3100",
+        "degree": "MBBS, FCPS (Medicine)",
+        "phn": "Serial: +8801841461631",
+        "p2": "Specialist in Medicine",
+        "p3": "BMDC Registration No: A-27500",
+        "price": "$34",
+        "id": 2,
+        "img": "https://media.istockphoto.com/photos/healthcare-workers-portrait-picture-id1284636209?b=1&k=20&m=1284636209&s=170667a&w=0&h=j_vm0DELoS5ZhzbqYAI60nHoO57jHlrGIyLgqBs6Wyg="
+    },
+    {
+        "name": "Dr. Abdul Hannan (Tareque)",
+        "p": " Popular Medical Centre and Hospital Sylhet, Room No - 325 (Level - 3), Subhanighat, Sylhet, 3100",
+        "degree": "MBBS, FCPS (Medicine)",
+        "phn": "Serial: +8801841461631",
+        "p3": "BMDC Registration No: A-27500",
+        "p2": "Specialist in Medicine",
+        "price": "$23",
+        "id": 3,
+        "img": "https://media.istockphoto.com/photos/portrait-of-middle-aged-asian-female-doctor-standing-in-hospital-picture-id1271328839?b=1&k=20&m=1271328839&s=170667a&w=0&h=SIMzwoe8eu43OoY4M3ElZCMxW9MgDbZbVzMhh4VY2zM="
+    },
+    {
+        "name": "Dr. Saiqa Rehnuma",
+        "p": " Popular Medical Centre and Hospital Sylhet, Room No - 325 (Level - 3), Subhanighat, Sylhet, 3100",
+        "degree": "MBBS, FCPS (Medicine)",
+        "phn": "Serial: +8801841461631",
+        "p2": "Specialist in Medicine",
+        "p3": "BMDC Registration No: A-27500",
+        "price": "$45",
+        "id": 4,
+        "img": "https://media.istockphoto.com/photos/portrait-of-middle-aged-asian-female-doctor-standing-in-hospital-picture-id1271328839?b=1&k=20&m=1271328839&s=170667a&w=0&h=SIMzwoe8eu43OoY4M3ElZCMxW9MgDbZbVzMhh4VY2zM="
+    },
+    {
+        "name": "Dr. Md. Ziaur Rahman Chowdhury",
+        "p": " Popular Medical Centre and Hospital Sylhet, Room No - 325 (Level - 3), Subhanighat, Sylhet, 3100",
+        "degree": "MBBS, FCPS (Medicine)",
+        "p2": "Specialist in Medicine",
+        "phn": "Serial: +8801841461631",
+        "p3": "BMDC Registration No: A-27500",
+        "price": "$67",
+        "id": 5,
+        "img": "https://media.istockphoto.com/photos/healthcare-workers-portrait-picture-id1284636209?b=1&k=20&m=1284636209&s=170667a&w=0&h=j_vm0DELoS5ZhzbqYAI60nHoO57jHlrGIyLgqBs6Wyg="
+    },
+    {
+        "name": "Dr. Foysal Ahmed",
+        "p": " Popular Medical Centre and Hospital Sylhet, Room No - 325 (Level - 3), Subhanighat, Sylhet, 3100",
+        "degree": "MBBS, FCPS (Medicine)",
+        "p2": "Specialist in Medicine",
+        "phn": "Serial: +8801841461631",
+        "p3": "BMDC Registration No: A-27500",
+        "price": "$6.99",
+        "id": 6,
+        "img": "https://media.istockphoto.com/photos/healthcare-workers-portrait-picture-id1284636209?b=1&k=20&m=1284636209&s=170667a&w=0&h=j_vm0DELoS5ZhzbqYAI60nHoO57jHlrGIyLgqBs6Wyg="
+    }
+]
