@@ -16,55 +16,61 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NotFound from './pages/Notfound/NotFound';
 import Detail from './pages/Detail/Detail';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
 
-      <BrowserRouter>
-        <Switch>
+      <AuthProvider>
 
-          <Route exact path="/">
 
-            <MiniHead></MiniHead>
-            <Header></Header>
-            <Doctors></Doctors>
-            <Banner></Banner>
-            <Signup></Signup>
-            <Onother></Onother>
-            <Footer></Footer>
-          </Route>
-          <Route path="/home">
 
-            <MiniHead></MiniHead>
-            <Header></Header>
-            <Doctors></Doctors>
-            <Banner></Banner>
-            <Signup></Signup>
-            <Onother></Onother>
-            <Footer></Footer>
-          </Route>
-          <Route path="/blood">
-            <Blood></Blood>
-          </Route>
-          <PrivateRoute path="/pharmacy">
-            <Pharmacy></Pharmacy>
-          </PrivateRoute>
-          <Route path="/login">
-            <Signup></Signup>
-          </Route>
-          <Route path="/ambulance">
-            <Ambulance></Ambulance>
-          </Route>
-          <Route path="/detail/:Id">
-            <Detail></Detail>
-          </Route>
-          <Route>
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
+        <BrowserRouter>
+          <Switch>
 
-      </BrowserRouter>
+            <Route exact path="/">
+
+              <MiniHead></MiniHead>
+              <Header></Header>
+              <Doctors></Doctors>
+              <Banner></Banner>
+              <Signup></Signup>
+              <Onother></Onother>
+              <Footer></Footer>
+            </Route>
+            <Route path="/home">
+
+              <MiniHead></MiniHead>
+              <Header></Header>
+              <Doctors></Doctors>
+              <Banner></Banner>
+              <Signup></Signup>
+              <Onother></Onother>
+              <Footer></Footer>
+            </Route>
+            <Route path="/blood">
+              <Blood></Blood>
+            </Route>
+            <PrivateRoute path="/pharmacy">
+              <Pharmacy></Pharmacy>
+            </PrivateRoute>
+            <Route path="/login">
+              <Signup></Signup>
+            </Route>
+            <PrivateRoute path="/ambulance">
+              <Ambulance></Ambulance>
+            </PrivateRoute>
+            <Route path="/detail/:Id">
+              <Detail></Detail>
+            </Route>
+            <Route>
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+
+        </BrowserRouter>
+      </AuthProvider>
 
 
 

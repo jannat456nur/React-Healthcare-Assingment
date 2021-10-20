@@ -1,43 +1,29 @@
 import { getAuth } from '@firebase/auth';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router';
 import useFirebase from '../../hooks/useFirebase';
 import './Signup.css'
 
 const Signup = () => {
-    const { user, signInUsingGoogle, verify,
+    const history = useHistory()
+    const location = useLocation()
+    const { user, signInUsingGoogle,
         handleRegistration,
         toogleLogIn,
         handleEmailChange,
-        handlePassChange, setError, login, error } = useFirebase()
+        handlePassChange, login, error } = useFirebase()
 
+
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(location.state?.from || '/home')
+            })
+    }
 
     return (
-        // <div className="d-flex dakters-bg-danger" id="signup">
 
-
-        //     <form onSubmit={handleRegistration} className="row g-3">
-        //         <div className="col-auto">
-
-        //             <h1 className="m-5 text-white">Signup For Latest <br /> Updates and News</h1>
-        //         </div>
-        //         <div className="col-auto pt-5">
-        //             <label htmlFor="inputPassword2" className="visually-hidden">Email</label>
-        //             <input onChange={handleEmailChange} type="email" className="form-control" id="inputPassword2" placeholder="email" />
-        //         </div>
-        //         <div className="col-auto pt-5">
-        //             <label htmlFor="inputPassword2" className="visually-hidden">Email</label>
-        //             <input onChange={handlePassChange} type="password" className="form-control" id="inputPassword2" placeholder="password" />
-        //         </div>
-
-        //         <div className="col-auto pt-5">
-        //             <Link><button type="button" className="btn btn-light">Register</button></Link>
-        //         </div>
-        //         <div className="col-auto pt-5">
-        //             <button onClick={signInUsingGoogle} type="button" className="btn btn-light">Google signIn</button>
-        //         </div>
-        //     </form>
-        // </div>
 
         <div className="App">
             <form onSubmit={handleRegistration}>
@@ -70,7 +56,7 @@ const Signup = () => {
             </form>
 
             <div className="col-auto pt-5">
-                <button onClick={signInUsingGoogle} type="button" className="btn btn-light">Google signIn</button>
+                <button onClick={handleGoogleLogin} type="button" className="btn btn-light">Google signIn</button>
             </div>
         </div>
 

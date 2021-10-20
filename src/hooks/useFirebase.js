@@ -41,6 +41,7 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, pass)
             .then(result => {
                 const user = result.user;
+                setUser(user)
                 setError('')
             })
             .catch(error => {
@@ -51,6 +52,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, pass)
             .then((result) => {
                 const user = result.user;
+                setUser(user)
                 console.log(user)
                 setError('')
                 // verifyEmail()
@@ -69,9 +71,10 @@ const useFirebase = () => {
     }
 
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
+        return signInWithPopup(auth, googleProvider)
             .then(result => {
                 console.log(result.user)
+                setUser(result.user)
             })
     }
 
