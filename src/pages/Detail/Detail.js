@@ -10,7 +10,7 @@ const Detail = () => {
             .then(res => res.json())
             // .then(data => setDetail(data))
             .then(data => {
-                const services = detail.filter((detail) => detail.id == id);
+                const services = detail.filter((detail) => serviceData.id == id);
             }
 
 
