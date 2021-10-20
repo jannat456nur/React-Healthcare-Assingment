@@ -20,6 +20,7 @@ const Header = () => {
                         <Link to="/pharmacy" className="nav-link ">Pharmacy </Link>
                         <Link to="/ambulance" className="nav-link ">Ambulance </Link>
                         <Link to="/home/#signup" className="nav-link "><i class="fas fa-sign-in-alt"></i></Link>
+                        <span>{user.displayName}</span>
                         {
                             user.email ?
                                 <button onClick={logOut}> LogOut</button> :
